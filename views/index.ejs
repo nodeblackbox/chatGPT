@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversation</title>
+  </head>
+  <body>
+    <h1>Conversation App</h1>
+    <ul>
+      <% conversation.forEach((message) => { %>
+        <li><%= message %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="C:\Users\nasan\Downloads\chatGPT\public\style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">Chat with AI Chatbot</div>
+        <ul>
+            <% conversation.forEach((message) => { %>
+            <li><%= message %></li>
+            <% }); %>
+        </ul>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will appear here -->
+      </div>
+        <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your message here..." />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="/main.js"></script> <!-- Change this line -->
+  </body>
+</html>
